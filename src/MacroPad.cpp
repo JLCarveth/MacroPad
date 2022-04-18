@@ -12,15 +12,15 @@
 */
 
 // Button Definitions
-#define BUTTON_KEY1 KEY_F1
-#define BUTTON_KEY2 KEY_F2
-#define BUTTON_KEY3 KEY_F3
-#define BUTTON_KEY4 KEY_F4
-#define BUTTON_KEY5 KEY_F5
-#define BUTTON_KEY6 KEY_F6
-#define BUTTON_KEY7 KEY_F7
-#define BUTTON_KEY8 KEY_F8
-#define BUTTON_KEY9 KEY_F9
+#define BUTTON_KEY1 KEY_F13
+#define BUTTON_KEY2 KEY_F14
+#define BUTTON_KEY3 KEY_F15
+#define BUTTON_KEY4 KEY_F16
+#define BUTTON_KEY5 KEY_F17
+#define BUTTON_KEY6 KEY_F18
+#define BUTTON_KEY7 KEY_F19
+#define BUTTON_KEY8 KEY_F22
+#define BUTTON_KEY9 KEY_F23
 
 // Pin Definitions
 #define BUTTON_PIN1 0
@@ -95,9 +95,9 @@ void loop() {
 
 void macroCommand(boolean state, uint8_t key) {
   if (state) {
-    Keyboard.press(KEY_LEFT_CTRL);
-    Keyboard.press(KEY_LEFT_SHIFT);
-    Keyboard.press(KEY_LEFT_ALT);
+    //Keyboard.press(KEY_LEFT_CTRL);
+    //Keyboard.press(KEY_LEFT_SHIFT);
+    //Keyboard.press(KEY_LEFT_ALT);
     Keyboard.press(key);
   } else Keyboard.releaseAll();
 }
